@@ -2,16 +2,16 @@ namespace DesafioPOO.Models
 {
     public abstract class Smartphone
     {
-        public string Numero { get; set; };
-        protected string Modelo { get; set; };
-        protected string Imei { get; set; };
-        protected int Memoria { get; set; };
+        public string Numero { get; set; }
+        private string Modelo { get; set; }
+        private string Imei { get; set; }
+        private int Memoria { get; set; }
 
-        public Smartphone(string numero, string modelo, string imei, int memoria)
+        public  Smartphone(string numero, string modelo, string imei, int memoria)
         {
             Numero = numero;
             Modelo = modelo;
-            IMEI = imei;
+            Imei = imei;
             Memoria = memoria;
         }
 
@@ -20,7 +20,7 @@ namespace DesafioPOO.Models
             Console.WriteLine("Ligando...");
         }
 
-        public abstract void ReceberLigacao()
+        public void ReceberLigacao()
         {
             Console.WriteLine("Recebendo ligação...");
         }

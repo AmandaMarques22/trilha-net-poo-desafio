@@ -10,5 +10,6 @@ namespace DesafioPOO.Models
         {
             Console.WriteLine($"Instalando o aplicativo \"{nomeApp}\" no Nokia!");
         }
+
     }
 }
